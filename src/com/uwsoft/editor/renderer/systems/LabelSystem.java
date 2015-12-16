@@ -75,7 +75,7 @@ public class LabelSystem extends IteratingSystem {
 		
 		
 		labelComponent.layout.setText(font, labelComponent.text, 0, labelComponent.text.length, Color.WHITE, dimensionsComponent.width, labelComponent.lineAlign, labelComponent.wrap, null);
-		labelComponent.cache.setText(labelComponent.layout, textX, textY);
+		labelComponent.cache.setText(labelComponent.layout, 0, textY);
 		
 		if (fontScaleX != 1 || fontScaleY != 1) font.getData().setScale(oldScaleX, oldScaleY);
 	}
